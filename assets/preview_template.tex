@@ -1,0 +1,19 @@
+% Preview of all paper tables and figures. Compile with pdflatex from the folder holding this file.
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,float}
+\usepackage{newtxtext,newtxmath}
+\input{aer_preamble.tex}   % booktabs, threeparttable, adjustbox, caption + AER caption style
+\graphicspath{{../figures/}}
+\begin{document}
+
+\input{../tables/tab_1_example.tex}
+
+\begin{figure}[!htbp]\centering
+\caption{Title in Title Case}\label{fig:example}
+\includegraphics[width=\textwidth]{fig_1_example.pdf}
+\begin{minipage}{\textwidth}\footnotesize \textit{Notes:} Estimator, fixed effects, 95\% confidence intervals clustered by
+unit; reference period $-1$. Sample and sources.\end{minipage}
+\end{figure}
+
+\end{document}

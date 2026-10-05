@@ -1,0 +1,8 @@
+% AER-style table/figure typography. In the paper preamble: \input{aer_preamble.tex} (after \documentclass).
+% Tables produced by data/03_code/analysis/paper_output.py also need booktabs, threeparttable and adjustbox.
+\usepackage{booktabs,threeparttable,adjustbox,caption}
+\DeclareCaptionLabelSeparator{aerdash}{---}
+% "TABLE 2---TARGET PLOT OUTCOMES": label and title in small caps, centered, rule-free caption above the table
+\captionsetup[table]{labelsep=aerdash, font={small,sc}, justification=centering, skip=6pt, position=top}
+\captionsetup[figure]{labelsep=aerdash, font={small,sc}, justification=centering, skip=6pt}
+% notes in threeparttable: footnotesize, flush left, italic "Notes:" is written by the table files

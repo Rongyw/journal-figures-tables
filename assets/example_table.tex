@@ -1,0 +1,39 @@
+\begin{table}[!htbp]\centering
+\caption{Large-Load Tariffs and the Composition of New Data-Center Projects}
+\label{tab:composition}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{threeparttable}
+\begin{tabular}{lccccc}
+\specialrule{0.4pt}{0pt}{1.2pt}\specialrule{0.4pt}{0pt}{\belowrulesep}
+ & \multicolumn{3}{c}{Developer type (share)} &  &  \\
+\cmidrule(lr){2-4}
+ & Speculative & Neocloud & Hyperscale & log MW & On-site gen. \\
+ & (1) & (2) & (3) & (4) & (5) \\
+\midrule
+\multicolumn{6}{l}{\textit{Panel A. Event: tariff approval (written final order)}} \\
+Post tariff & $-0.101$ & $0.045$ & $-0.019$ & $-0.503$ & $0.187$ \\
+ & [0.073] & [0.076] & [0.121] & [0.583] & [0.225] \\
+\addlinespace
+Mean of dependent variable & 0.078 & 0.158 & 0.343 & 4.501 & 0.233 \\
+Post-tariff projects & 26 & 26 & 26 & 20 & 9 \\
+Observations & 310 & 310 & 310 & 237 & 46 \\
+\addlinespace[6pt]
+\multicolumn{6}{l}{\textit{Panel B. Event: applicability start (grandfathering cutoff)}} \\
+Post tariff & $-0.014$ & $0.041$ & $0.035$ & $-0.145$ & $0.554^{**}$ \\
+ & [0.096] & [0.097] & [0.164] & [0.595] & [0.226] \\
+\addlinespace
+Mean of dependent variable & 0.078 & 0.158 & 0.343 & 4.501 & 0.233 \\
+Post-tariff projects & 21 & 21 & 21 & 17 & 9 \\
+Observations & 310 & 310 & 310 & 237 & 46 \\
+\midrule
+Utility-state fixed effects & Yes & Yes & Yes & Yes & Yes \\
+Announcement-quarter fixed effects & Yes & Yes & Yes & Yes & Yes \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item \textit{Notes:} Unit of observation is a new data-center project (DataCenterMap, announcement month known, 2021Q1--2026Q1; phases and buildings of one development counted once, at first appearance). \textit{Post tariff} equals one if the project was announced in a utility-state on or after the quarter of the event. Speculative = land-bank and real-estate developers; Neocloud = GPU-cloud and HPC operators; Hyperscale = hyperscale operators; log MW uses announced power; On-site gen.\ = project plans on-site generation. Linear probability and OLS models; standard errors clustered by utility-state (199 clusters). Standard errors in brackets. $^{*}p<0.10$, $^{**}p<0.05$, $^{***}p<0.01$.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\end{table}
